@@ -1,0 +1,74 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{盛栋铭}
+
+\basicInfo{
+  \email{201530612699@mail.scut.edu.cn} \textperiodcentered\ 
+  \phone{(+86) 135-333-45971} \textperiodcentered\ 
+  \github[sdmhans]{https://github.com/sdmhans}}
+ 
+\section{\faGraduationCap\ 教育背景}
+\datedsubsection{\textbf{华南理工大学}, 广州}{2015年9月 -- 2019年6月}
+\textit{在读本科生}\ 软件工程卓越班, GPA: 3.8 / 4.0 （排名8 / 42）
+
+\section{\faUsers\ 项目经历}
+\datedsubsection{\textbf{Kaggle 冰山/船只识别比赛（Statoil Iceberg Classifier Challenge）}}{2018年1月}
+
+\begin{onehalfspacing}
+判断所给卫星图像中的是冰山还是船只（二分类图像识别问题）
+\begin{itemize}
+  \item 单人参赛，历时3周，排名：223 / 3343 （前7\%，Kaggle铜牌）
+  \item 学习使用keras框架搭建CNN模型
+  \item 构建了完整的工作流（图像预处理-模型搭建和训练-结果预测-模型融合）
+  \item 采用测试时增强（TTA）和一种简单的伪标签方法提升模型效果
+\end{itemize}
+\end{onehalfspacing}
+
+\datedsubsection{\textbf{2017 CCF大数据与计算智能大赛（BDCI-2017）\\“城市自行车的出行行为分析及效率优化”赛题}}{2017年10月 -- 2017年12月}
+\begin{onehalfspacing}
+给出400个站点前8个月每天的自行车借/还量，预测后2个月每天的自行车借/还量（时序预测问题）
+\begin{itemize}
+  \item 5人组队参赛，历时2个月，排名：2 / 78
+  \item 从天气、节假日、站点地理位置等角度提取100+的人工特征
+\end{itemize}
+\end{onehalfspacing}
+
+% Reference Test
+%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+%An xxx optimized for xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item main contribution
+%\end{itemize}
+
+\section{\faHeartO\ 奖项和证书}
+\datedline{大学英语四级证书（总分：612）}{2015 年12 月}
+\datedline{大学英语六级证书（总分：632）}{2016 年$\ \;$6  月}
+\datedline{华南理工大学2015-2016学年度校三等奖学金}{2016 年12 月}
+\datedline{华南理工大学2016-2017学年度校一等奖学金}{2017 年12 月}
+\datedline{浙江大学计算机程序设计能力考试（甲级）成绩证书（总分：97 / 100）}{2018 年$\ \;$3 月}
+
+
+\section{\faInfo\ 其他}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 编程语言：python、C++
+  \item 感兴趣的方向：使用深度学习解决计算机视觉问题
+  \item 特长爱好：乒乓球、钢琴
+\end{itemize}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
